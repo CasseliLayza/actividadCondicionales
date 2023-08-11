@@ -22,7 +22,7 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ● Si su edad es impar, decirle en cualquiera de los mensajes: "¿Sabías que tu
 // edad es impar?".
 
-let edad = 0
+let edad = 7
 
 if (edad < 0) {
     console.log("Error, edad inválida. Por favor ingrese un número válido.")
@@ -32,14 +32,14 @@ if (edad < 0) {
         console.log("NO puede pasar al bar")
 
     } else if (edad < 21) {
-        console.log("Puede pasar pero no tomar alcohol")
+        console.log("Puede pasar, pero no tomar alcohol")
 
     } else {
-        console.log("bienvenidoal bar!!, felicidades por haber llegado a la mayoría de edad!!.")
+        console.log("Bienvenidoal bar!!, felicidades por haber llegado a la mayoría de edad!!.")
 
     }
 
-    if (edad % 2 === 0 && edad != 0) {
+    if (edad % 2 !== 0 && edad !== 0) {
         console.log("¿Sabías que tu edad es impar?")
     }
 }
