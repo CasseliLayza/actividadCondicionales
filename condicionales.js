@@ -22,27 +22,27 @@ const prompt = require("prompt-sync")({ sigint: true });
 // ● Si su edad es impar, decirle en cualquiera de los mensajes: "¿Sabías que tu
 // edad es impar?".
 
-// let edad = 0
+let edad = 0
 
-// if (edad < 0) {
-//     console.log("Error, edad inválida. Por favor ingrese un número válido.")
-// } else {
+if (edad < 0) {
+    console.log("Error, edad inválida. Por favor ingrese un número válido.")
+} else {
 
-//     if (edad < 18) {
-//         console.log("NO puede pasar al bar")
+    if (edad < 18) {
+        console.log("NO puede pasar al bar")
 
-//     } else if (edad < 21) {
-//         console.log("Puede pasar pero no tomar alcohol")
+    } else if (edad < 21) {
+        console.log("Puede pasar pero no tomar alcohol")
 
-//     } else {
-//         console.log("bienvenidoal bar!!, felicidades por haber llegado a la mayoría de edad!!.")
+    } else {
+        console.log("bienvenidoal bar!!, felicidades por haber llegado a la mayoría de edad!!.")
 
-//     }
+    }
 
-//     if (edad % 2 === 0 && edad != 0) {
-//         console.log("¿Sabías que tu edad es impar?")
-//     }
-// }
+    if (edad % 2 === 0 && edad != 0) {
+        console.log("¿Sabías que tu edad es impar?")
+    }
+}
 
 
 /*totalAPagar()
@@ -188,7 +188,7 @@ function OrdenarSandwichesAndPagar(tipoDeSandwich, tipoDePan, Queso, Tomate, Lec
 
 }
 
-
+//JSON sent to backEnd
 const ordenSandwich = {
     tipoDeSandwich: "pollo",
     tipoDePan: "blanco",
@@ -211,18 +211,9 @@ let Cebolla = (Object.values(Object.values(ordenSandwich)[2])[3])
 let Mayonesa = (Object.values(Object.values(ordenSandwich)[2])[4])
 let Mostaza = (Object.values(Object.values(ordenSandwich)[2])[5])
 
-// let tipoDeSandwich = ordenSandwich.tipoDeSandwich
-// let tipoDePan = ordenSandwich.tipoDePan
-// let Queso = ordenSandwich.adicionalSeleccionado.Queso
-// let Tomate = ordenSandwich.adicionalSeleccionado.Tomate
-// let Lechuga = ordenSandwich.adicionalSeleccionado.Lechuga
-// let Cebolla = ordenSandwich.adicionalSeleccionado.Cebolla
-// let Mayonesa = ordenSandwich.adicionalSeleccionado.Tomate
-// let Mostaza = ordenSandwich.adicionalSeleccionado.Mayonesa
-
 
 console.log(OrdenarSandwichesAndPagar(tipoDeSandwich, tipoDePan, Queso, Tomate, Lechuga, Cebolla, Mayonesa, Mostaza)) //pedido fromEnd
-console.log(OrdenarSandwichesAndPagar("pollo", "blanco", false, true, true, true, false, true)) // pedido manual
+
 
 
 /*¿Cual es el número secreto? 
