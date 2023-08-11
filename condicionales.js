@@ -224,7 +224,7 @@ retorna un mensaje de aliento junto con el número ingresado y el secreto.*/
 
 function verificarNumeroSecreto(numero) {
     if (typeof numero === 'number') {   //control de error
-        let numeroSecret = Math.floor(Math.random() * (11 - 1 + 1) + 1)
+        let numeroSecret = Math.floor(Math.random() * (10 - 1 + 1) + 1)
         if (numeroSecret === numero) {
             return `Felicidades adivinaste el numero secreto ${numeroSecret} :)!!`
         } else {
